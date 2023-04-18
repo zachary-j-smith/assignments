@@ -1,24 +1,26 @@
 body {
-    background-color: gray;
+    background-color: black;
     border-radius: 25px;
     text-align: center;
 }
 
 #intro {
-    font-size: 50px;
-    background-color: darkgray;
-    color: indigo;
+    font-size: 100px;
+    background-color: pink;
+    color: hotpink;
 }
 
 #message {
-    color: indigo;
+    color: pink;
+    font-size: 50px;
 }
 
 #btn {
-    color: darkgray;
-    background-color: indigo;
+    color: hotpink;
+    background-color: pink;
     border-radius: 25px;
-    height: 75px;
-    width: 75px;
+    height: 250px;
+    width: 500px;
     border-style: double;
+    font-size: 75px;
 }
