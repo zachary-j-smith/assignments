@@ -1,27 +1,38 @@
 var box = document.getElementById("object")
-
-var boxColor = document.getElementById("object").style.backgroundColor 
+var boxStyle = document.getElementById("object").style
 
 box.addEventListener("mouseover", function() {
-    document.getElementById("object").style.backgroundColor = "blue"
+    boxStyle.backgroundColor = "blue"
 })
 
 box.addEventListener("mousedown", function() {
-    document.getElementById("object").style.backgroundColor = "red"
+    boxStyle.backgroundColor = "red"
 })
 
 box.addEventListener("mouseup", function() {
-    document.getElementById("object").style.backgroundColor = "yellow"
+    boxStyle.backgroundColor = "yellow"
 })
 
 box.addEventListener("dblclick", function() {
-    document.getElementById("object").style.backgroundColor = "green"
+    boxStyle.backgroundColor = "green"
 })
 
 document.addEventListener("wheel", function() {
-    document.getElementById("object").style.backgroundColor = "orange"
+    boxStyle.backgroundColor = "orange"
 })
 
 
 
-// e.target
+document.addEventListener("keydown", function(event) {
+    var key = event.key
+    var color = {
+        b : 'blue', 
+        r : 'red',
+        y : 'yellow',
+        g : 'green',
+        o : 'orange',
+        w : 'white'
+    }
+    console.log(event.target)
+    document.getElementById("object").style.backgroundColor = color[key]
+});
