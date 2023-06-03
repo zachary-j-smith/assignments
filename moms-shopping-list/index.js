@@ -17,10 +17,6 @@ function createSubItem(e){
     const subItem = document.createElement("div")
     var subItemValue = form.inputBar.value + " "
     subItem.textContent = subItemValue
-//    const editButton = createEditButton(e)
-//    const deleteButton = createDeleteButton(e)
-//    subItem.append(editButton)
-//    subItem.append(deleteButton)
     subItem.setAttribute("class", "newItem")
 
     return subItem
@@ -44,6 +40,3 @@ function createDeleteButton(e){
     
     return deleteButton
 }
-
-
-// Need to work on getting my new item div to not include the edit/delete buttons //

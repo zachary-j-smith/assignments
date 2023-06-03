@@ -1,0 +1,52 @@
+div {
+    height: 50px;
+    border: 2px solid white;
+}
+h1 {
+    text-align: center;
+}
+.millenial {
+    background-color: #F5C6D6;
+}
+.hot-pink {
+    background-color: #EE2E84;
+}
+.blue {
+    background-color: #85CFD8;
+}
+.green {
+    background-color: #8DC63F;
+}
+.orange {
+    background-color: #E76E34;
+}
+
+@media only screen and (min-width: 768px) {
+    * {
+        box-sizing: border-box;
+        font-size: 0px;
+    }
+    div {
+        height: 150px;
+        border: 10px solid white;
+    }
+    .millenial {
+        margin-top: 75px;
+    }
+    .hot-pink {
+        width: 25%;
+        display: inline-block;
+    }
+    .blue {
+        display: inline-block;
+        width: 50%;
+    }
+    .green {
+        display: inline-block;
+        width: 75%
+    }
+    .orange {
+        display: inline-block;
+        width: 25%;
+    }
+}
